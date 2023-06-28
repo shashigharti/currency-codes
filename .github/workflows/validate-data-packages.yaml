@@ -1,0 +1,18 @@
+name: data packages validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  frictionless-repository:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Validate data
+        uses: frictionlessdata/repository@v2
