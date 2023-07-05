@@ -15,4 +15,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Test Action
-        uses: shashigharti/frepo-test@v2
+        uses: shashigharti/frepo-test@v3
